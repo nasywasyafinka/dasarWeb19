@@ -1,0 +1,44 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+.container{
+    display: flex;
+    gap:10px;
+    width:900px;
+    margin:50px auto;
+    background-color: paleturquoise;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+.sidebar-satu{
+    margin: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    order: 1;
+}
+.sidebar-satu ul{
+    margin-right: 10px;
+    padding-left: 30px;
+    color:plum;
+}
+.sidebar-dua{
+    flex: 1;
+    order:3;
+    padding-right:10px;
+    margin-right: 20px;
+}
+.kolom-utama{
+    flex:2;
+    order:2;
+    padding-right: 20px;
+}
+.kolom-utama h2, .sidebar-satu h3, .sidebar-dua h3{
+background-color:   rgb(7, 154, 208);
+}
