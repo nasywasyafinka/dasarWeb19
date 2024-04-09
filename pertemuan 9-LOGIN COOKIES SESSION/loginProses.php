@@ -9,14 +9,12 @@ $result = mysqli_query($connect, $query);
 $cek = mysqli_num_rows($result);
 
 if ($cek) {
+    echo "Anda berhasil login. Silahkan menuju "; ?>
+    <a href="homeAdmin.html">Halaman HOME</a>
+    <?php
+} else {
     echo "Anda gagal login. Silahkan "; ?>
     <a href="loginForm.html">Login kembali</a>
     <?php
     echo mysqli_error($connect);
-} else {
-    
-    echo "Anda berhasil login. Silahkan menuju "; ?>
-    <a href="homeAdmin.html">Halaman HOME</a>
-    <?php
 }
-?>
