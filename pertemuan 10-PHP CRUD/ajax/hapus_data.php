@@ -6,7 +6,7 @@ include "./csrf.php";
 
 $id = $_POST['id'];
 
-$query = "DELETE FROM anggota WHERE id = ?";
+$query = "DELETE FROM anggota2 WHERE id = ?";
 $sql = $db1->prepare($query);
 $sql->bind_param('i', $id);
 $sql->execute();

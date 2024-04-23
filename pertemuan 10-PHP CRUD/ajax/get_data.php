@@ -1,10 +1,11 @@
+
 <?php
 session_start();
 include "./koneksi.php";
 include "./csrf.php";
 
 $id = $_POST['id'];
-$query = "SELECT * FROM anggota WHERE id = ? ORDER BY id DESC";
+$query = "SELECT * FROM anggota2 WHERE id = ? ORDER BY id DESC";
 $sql = $db1->prepare($query);
 $sql->bind_param('i', $id);
 $sql->execute();
@@ -19,3 +20,4 @@ while ($row = $res1->fetch_assoc()) {
 
 echo json_encode($h);
 $db1->close();
+?>

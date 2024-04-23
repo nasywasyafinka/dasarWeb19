@@ -13,7 +13,9 @@ if (!empty($_SESSION['level'])) {
     } else {
         include 'admin/template/home.php';
     }
+
     include 'admin/template/footer.php';
 } else {
     header("Location: login.php");
 }
+?>
